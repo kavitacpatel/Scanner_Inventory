@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6BFAD46E1CB59AE90015B549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD46D1CB59AE90015B549 /* AppDelegate.swift */; };
-		6BFAD4701CB59AE90015B549 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD46F1CB59AE90015B549 /* ViewController.swift */; };
+		6BFAD4701CB59AE90015B549 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD46F1CB59AE90015B549 /* ScanViewController.swift */; };
 		6BFAD4731CB59AE90015B549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAD4711CB59AE90015B549 /* Main.storyboard */; };
 		6BFAD4761CB59AE90015B549 /* Scanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD4741CB59AE90015B549 /* Scanner.xcdatamodeld */; };
 		6BFAD4781CB59AE90015B549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAD4771CB59AE90015B549 /* Assets.xcassets */; };
 		6BFAD47B1CB59AE90015B549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAD4791CB59AE90015B549 /* LaunchScreen.storyboard */; };
 		6BFAD4861CB59AEA0015B549 /* ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD4851CB59AEA0015B549 /* ScannerTests.swift */; };
 		6BFAD4911CB59AEA0015B549 /* ScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD4901CB59AEA0015B549 /* ScannerUITests.swift */; };
+		6BFAD4A21CB59F030015B549 /* InventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD4A11CB59F030015B549 /* InventoryTableViewController.swift */; };
+		6BFAD4A41CB5A0910015B549 /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD4A31CB5A0910015B549 /* ProductDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		6BFAD46A1CB59AE90015B549 /* Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFAD46D1CB59AE90015B549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6BFAD46F1CB59AE90015B549 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BFAD46F1CB59AE90015B549 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		6BFAD4721CB59AE90015B549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BFAD4751CB59AE90015B549 /* Scanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Scanner.xcdatamodel; sourceTree = "<group>"; };
 		6BFAD4771CB59AE90015B549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		6BFAD48C1CB59AEA0015B549 /* ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFAD4901CB59AEA0015B549 /* ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerUITests.swift; sourceTree = "<group>"; };
 		6BFAD4921CB59AEA0015B549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BFAD4A11CB59F030015B549 /* InventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTableViewController.swift; sourceTree = "<group>"; };
+		6BFAD4A31CB5A0910015B549 /* ProductDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,10 @@
 		6BFAD46C1CB59AE90015B549 /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				6BFAD4A01CB59C440015B549 /* controller */,
+				6BFAD49F1CB59C3F0015B549 /* view */,
+				6BFAD49E1CB59C380015B549 /* model */,
 				6BFAD46D1CB59AE90015B549 /* AppDelegate.swift */,
-				6BFAD46F1CB59AE90015B549 /* ViewController.swift */,
 				6BFAD4711CB59AE90015B549 /* Main.storyboard */,
 				6BFAD4771CB59AE90015B549 /* Assets.xcassets */,
 				6BFAD4791CB59AE90015B549 /* LaunchScreen.storyboard */,
@@ -126,6 +132,30 @@
 				6BFAD4921CB59AEA0015B549 /* Info.plist */,
 			);
 			path = ScannerUITests;
+			sourceTree = "<group>";
+		};
+		6BFAD49E1CB59C380015B549 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		6BFAD49F1CB59C3F0015B549 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6BFAD4A31CB5A0910015B549 /* ProductDetails.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		6BFAD4A01CB59C440015B549 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				6BFAD46F1CB59AE90015B549 /* ScanViewController.swift */,
+				6BFAD4A11CB59F030015B549 /* InventoryTableViewController.swift */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BFAD4701CB59AE90015B549 /* ViewController.swift in Sources */,
+				6BFAD4701CB59AE90015B549 /* ScanViewController.swift in Sources */,
 				6BFAD4761CB59AE90015B549 /* Scanner.xcdatamodeld in Sources */,
+				6BFAD4A41CB5A0910015B549 /* ProductDetails.swift in Sources */,
+				6BFAD4A21CB59F030015B549 /* InventoryTableViewController.swift in Sources */,
 				6BFAD46E1CB59AE90015B549 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
